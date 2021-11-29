@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-11-30T00:33:52 IST" name="Default suite" finished-at="2021-11-30T00:34:07 IST" duration-ms="15226">
+    <groups>
+    </groups>
+    <test started-at="2021-11-30T00:33:52 IST" name="Default test" finished-at="2021-11-30T00:34:07 IST" duration-ms="15226">
+      <class name="com.automation.test.MainTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.automation.test.MainTest@192c3f1e]" started-at="2021-11-30T00:33:52 IST" name="setup" finished-at="2021-11-30T00:33:56 IST" duration-ms="4268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="googleSearch()[pri:0, instance:com.automation.test.MainTest@192c3f1e]" started-at="2021-11-30T00:33:56 IST" name="googleSearch" finished-at="2021-11-30T00:34:07 IST" duration-ms="10818" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- googleSearch -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.automation.test.MainTest@192c3f1e]" started-at="2021-11-30T00:34:07 IST" name="teardown" finished-at="2021-11-30T00:34:07 IST" duration-ms="112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.automation.test.MainTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

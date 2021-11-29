@@ -1,0 +1,24 @@
+package com.automation.utility;
+
+import java.io.File;
+import java.io.IOException;
+
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.io.FileHandler;
+
+import com.automation.base.BaseClass;
+
+public class UtilityHelper extends BaseClass{
+
+	public static long IMPLICIT_TIMEOUT=10;
+	public static long PAGE_LOAD_TIMEOUT=20;
+	public static String URL="https://www.google.com/maps/";
+	
+	
+	public static void takeScreenshotOfTest() throws IOException {
+		File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		String currentDir = System.getProperty("user.dir");
+		FileHandler.copy(scrFile, new File(currentDir + "/ScreenShots/" + System.currentTimeMillis() + ".png"));
+	}
+}
