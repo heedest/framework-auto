@@ -19,67 +19,82 @@ import com.automation.page.PageObjectClass;
 import com.automation.utility.UtilityHelper;
 
 public class MainTest extends BaseClass {
-	/* Logger log=Logger.getLogger(MainTest.class); */
-	Logger logger=Logger.getLogger(MainTest.class);
-	
-	PageObjectClass pobject=PageFactory.initElements(driver,PageObjectClass.class);
+	/*
+	 * Logger log=Logger.getLogger(MainTest.class); Logger
+	 * logger=Logger.getLogger(MainTest.class);
+	 */
+
+	PageObjectClass pobject = PageFactory.initElements(driver, PageObjectClass.class);
 	SoftAssert softAssert = new SoftAssert();
-	
-	@Test(priority=1)
+
+	@Test(priority = 1)
 	public void googleSearch() throws IOException, InterruptedException {
-		PageObjectClass pobject=PageFactory.initElements(driver,PageObjectClass.class);
+		PageObjectClass pobject = PageFactory.initElements(driver, PageObjectClass.class);
 		pobject.searchLocation("Wankhede Stadium");
 		Thread.sleep(5000);
 		pobject.clickSearch();
 		Thread.sleep(5000);
 		UtilityHelper.takeScreenshotOfTest();
-		logger.info("first test successfully completed");
-		log.info("100");
-		
+		log.info("first test successfully completed");
+
 	}
-	
-	@Test(priority=2)
-	public void verifyStadiumText()
-	{
-		PageObjectClass pobject=PageFactory.initElements(driver,PageObjectClass.class);
+
+	@Test(priority = 2)
+	public void verifyStadiumText() {
+		PageObjectClass pobject = PageFactory.initElements(driver, PageObjectClass.class);
 		SoftAssert softAssert = new SoftAssert();
 		softAssert.assertTrue(pobject.verifyText(), "Stadium Text not matched");
 		softAssert.assertAll();
 	}
+
+	@Test(priority = 3)
+	public void verifyTitle() {
+
+		// Assert.assertEquals(pobject.verifyTitle(),"Wankhede Stadium Mumbai - Google
+		// Maps","title not matched");
+		Assert.assertEquals(pobject.verifyTitle(), "Wankhede Stadium Mumbai - Google Maps", "title not matched");
+	}
+
+	// prinbt using logger
 	
 	
-	@Test(priority=3)
-	public void verifyTitle()
+	@Test(priority = 4)
+	public void printTest()
 	{
-	
-		//Assert.assertEquals(pobject.verifyTitle(),"Wankhede Stadium Mumbai - Google Maps","title not matched");
-		Assert.assertEquals(pobject.verifyTitle(),"Wankhede Stadium Mumbai - Google Maps","title not matched");
+		PageObjectClass pobject = PageFactory.initElements(driver, PageObjectClass.class);
+		pobject.print();
 	}
 	
-	//prinbt using logger
-	@Test(priority=4)
-	public void verifyLink(){
-		PageObjectClass pobject=PageFactory.initElements(driver,PageObjectClass.class);
+	@Test(priority = 5)
+	public void verifyLink() {
+		PageObjectClass pobject = PageFactory.initElements(driver, PageObjectClass.class);
 		/*
 		 * SoftAssert softAssert = new SoftAssert();
 		 * softAssert.assertTrue(pobject.verifylink(),"link not matched");
 		 * softAssert.assertAll();
 		 */
-		Assert.assertTrue(pobject.verifylink(),"link not matched");
+		Assert.assertTrue(pobject.verifylink(), "link not matched");
 		
+
+	}
+
+	@Test(priority = 6)
+	public void printAdressTest()
+	{
+		PageObjectClass pobject = PageFactory.initElements(driver, PageObjectClass.class);
+		pobject.print2();
 	}
 	
-	@Test(priority=5)
-	public void verifyPhone() throws IOException, InterruptedException{
-		PageObjectClass pobject=PageFactory.initElements(driver,PageObjectClass.class);
-		softAssert.assertTrue(pobject.verifyPhone(),"phone not matched");
+	@Test(priority = 7)
+	public void verifyPhone() throws IOException, InterruptedException {
+		PageObjectClass pobject = PageFactory.initElements(driver, PageObjectClass.class);
+		softAssert.assertTrue(pobject.verifyPhone(), "phone not matched");
 		Thread.sleep(5000);
-		UtilityHelper.takeScreenshotEndOfTest();;
-		logger.info("last successfully completed");
-		//softAssert.assertAll();
-		
+		UtilityHelper.takeScreenshotEndOfTest();
+		;
+		log.info("last successfully completed");
+		// softAssert.assertAll();
+
 	}
-	
-	
-	
+
 }

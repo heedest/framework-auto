@@ -35,10 +35,12 @@ public class PageObjectClass extends BaseClass {
 	
 	@FindBy(xpath="//span[contains(text(),'4.5')]")
 	WebElement ratings;
-	
-	@FindBy(xpath="//button[contains(text(),'30,268 reviews')]")
-	WebElement reviews;
-	
+	/*
+	 * @FindBy(xpath="//button[contains(text(),'30,268 reviews')]") WebElement
+	 * reviews;
+	 */
+	@FindBy(partialLinkText = " reviews")
+	WebElement reviews1;
 	
 	
 	@FindBy(xpath="//div[contains(text(),'mumbaicricket.com')]")
@@ -60,6 +62,7 @@ public class PageObjectClass extends BaseClass {
 	/*
 	 * public PageObjectClass() { PageFactory.initElements(driver,this); }
 	 */
+	
 
 	public void searchLocation(String location) {
 	//	Search=new WebDriverWait(driver,20).until(ExpectedConditions.visibilityOf(Search));
@@ -91,12 +94,22 @@ public class PageObjectClass extends BaseClass {
 	
 	//print ratings point and number of reviews in the console in main
 	
+	public void print()
+	{
+		log.info("Rating is"+ratings.getText()+"\t"+"and Review"+reviews1.getText());
+	}
+	
 	public boolean verifylink()
 	{
 		return link.isDisplayed();
 	}
 	
 	//Print the address appearing above the “mumbaicricket.com”
+	public void print2()
+	{
+		log.info("address is:"+address.getText());
+	}
+	
 	public boolean verifyPhone()
 	{
 		return phone.isDisplayed();

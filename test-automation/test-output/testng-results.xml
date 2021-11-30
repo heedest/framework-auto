@@ -1,37 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-12-01T00:34:27 IST" name="Default suite" finished-at="2021-12-01T00:34:50 IST" duration-ms="22320">
+  <suite started-at="2021-12-01T01:39:58 IST" name="Default suite" finished-at="2021-12-01T01:40:19 IST" duration-ms="20447">
     <groups>
     </groups>
-    <test started-at="2021-12-01T00:34:27 IST" name="Default test" finished-at="2021-12-01T00:34:50 IST" duration-ms="22320">
+    <test started-at="2021-12-01T01:39:58 IST" name="Default test" finished-at="2021-12-01T01:40:19 IST" duration-ms="20447">
       <class name="com.automation.test.MainTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.automation.test.MainTest@576f63f6]" started-at="2021-12-01T00:34:27 IST" name="setup" finished-at="2021-12-01T00:34:33 IST" duration-ms="6026" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.automation.test.MainTest@1951b871]" started-at="2021-12-01T01:39:58 IST" name="setup" finished-at="2021-12-01T01:40:02 IST" duration-ms="4048" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="googleSearch()[pri:1, instance:com.automation.test.MainTest@576f63f6]" started-at="2021-12-01T00:34:33 IST" name="googleSearch" finished-at="2021-12-01T00:34:44 IST" duration-ms="10652" status="PASS">
+        <test-method signature="googleSearch()[pri:1, instance:com.automation.test.MainTest@1951b871]" started-at="2021-12-01T01:40:02 IST" name="googleSearch" finished-at="2021-12-01T01:40:13 IST" duration-ms="10661" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- googleSearch -->
-        <test-method signature="verifyStadiumText()[pri:2, instance:com.automation.test.MainTest@576f63f6]" started-at="2021-12-01T00:34:44 IST" name="verifyStadiumText" finished-at="2021-12-01T00:34:44 IST" duration-ms="39" status="PASS">
+        <test-method signature="verifyStadiumText()[pri:2, instance:com.automation.test.MainTest@1951b871]" started-at="2021-12-01T01:40:13 IST" name="verifyStadiumText" finished-at="2021-12-01T01:40:13 IST" duration-ms="39" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyStadiumText -->
-        <test-method signature="verifyTitle()[pri:3, instance:com.automation.test.MainTest@576f63f6]" started-at="2021-12-01T00:34:44 IST" name="verifyTitle" finished-at="2021-12-01T00:34:44 IST" duration-ms="6" status="PASS">
+        <test-method signature="verifyTitle()[pri:3, instance:com.automation.test.MainTest@1951b871]" started-at="2021-12-01T01:40:13 IST" name="verifyTitle" finished-at="2021-12-01T01:40:13 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTitle -->
-        <test-method signature="verifyLink()[pri:4, instance:com.automation.test.MainTest@576f63f6]" started-at="2021-12-01T00:34:44 IST" name="verifyLink" finished-at="2021-12-01T00:34:44 IST" duration-ms="31" status="PASS">
+        <test-method signature="printTest()[pri:4, instance:com.automation.test.MainTest@1951b871]" started-at="2021-12-01T01:40:13 IST" name="printTest" finished-at="2021-12-01T01:40:13 IST" duration-ms="57" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printTest -->
+        <test-method signature="verifyLink()[pri:5, instance:com.automation.test.MainTest@1951b871]" started-at="2021-12-01T01:40:13 IST" name="verifyLink" finished-at="2021-12-01T01:40:13 IST" duration-ms="33" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLink -->
-        <test-method signature="verifyPhone()[pri:5, instance:com.automation.test.MainTest@576f63f6]" started-at="2021-12-01T00:34:44 IST" name="verifyPhone" finished-at="2021-12-01T00:34:49 IST" duration-ms="5400" status="PASS">
+        <test-method signature="printAdressTest()[pri:6, instance:com.automation.test.MainTest@1951b871]" started-at="2021-12-01T01:40:13 IST" name="printAdressTest" finished-at="2021-12-01T01:40:13 IST" duration-ms="26" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printAdressTest -->
+        <test-method signature="verifyPhone()[pri:7, instance:com.automation.test.MainTest@1951b871]" started-at="2021-12-01T01:40:13 IST" name="verifyPhone" finished-at="2021-12-01T01:40:19 IST" duration-ms="5418" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPhone -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.automation.test.MainTest@576f63f6]" started-at="2021-12-01T00:34:49 IST" name="teardown" finished-at="2021-12-01T00:34:50 IST" duration-ms="132" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.automation.test.MainTest@1951b871]" started-at="2021-12-01T01:40:19 IST" name="teardown" finished-at="2021-12-01T01:40:19 IST" duration-ms="124" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

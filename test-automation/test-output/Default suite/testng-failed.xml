@@ -6,8 +6,8 @@
       <class name="com.automation.test.MainTest">
         <methods>
           <include name="teardown"/>
+          <include name="printTest"/>
           <include name="setup"/>
-          <include name="verifyPhone"/>
         </methods>
       </class> <!-- com.automation.test.MainTest -->
     </classes>
