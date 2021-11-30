@@ -25,11 +25,19 @@ public class UtilityHelper extends BaseClass{
 		FileHandler.copy(scrFile, new File("./ScreenShots/Wankhede_Search"+getDateTime()+".png"));
 	}
 	
+	
+	public static void takeScreenshotEndOfTest() throws IOException {
+		File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		//String currentDir = System.getProperty("user.dir");
+		FileHandler.copy(scrFile, new File("./ScreenShots/end_Search"+getDateTime()+".png"));
+	}
+	
 	public static String getDateTime()
 	{
 		DateFormat custDateFormat=new SimpleDateFormat("MM_dd_yyyy_HH_mm_ss");
 		Date currentDate=new Date();
-		return custDateFormat.format(currentDate);
-		
+		return custDateFormat.format(currentDate);	
 	}
+	
+	
 }

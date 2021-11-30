@@ -24,6 +24,39 @@ public class PageObjectClass extends BaseClass {
 			@FindBy(xpath = "//div[@id='omnibox']//div/descendant::div[@role='gridcell']") })
 	List<WebElement> list;
 
+	
+	
+	  @FindBy(xpath="//span[contains(text(),'Wankhede Stadium Mumbai')]")
+	  WebElement StadiumText;
+
+	/*
+	 * @FindBy(partialLinkText = "Stadium") WebElement StadiumText;
+	 */
+	
+	@FindBy(xpath="//span[contains(text(),'4.5')]")
+	WebElement ratings;
+	
+	@FindBy(xpath="//button[contains(text(),'30,268 reviews')]")
+	WebElement reviews;
+	
+	
+	
+	@FindBy(xpath="//div[contains(text(),'mumbaicricket.com')]")
+	WebElement link;
+	
+	@FindBy(xpath="//div[contains(text(),'Vinoo Mankad Rd, Churchgate, Mumbai, Maharashtra 400020')]")
+	WebElement address;
+	
+	
+	/*
+	 * @FindBy(partialLinkText ="Add place's phone number") WebElement phone;
+	 */
+	
+	@FindBy(xpath="//span[contains(text(),' phone number')]")
+	WebElement phone;
+
+	
+	
 	/*
 	 * public PageObjectClass() { PageFactory.initElements(driver,this); }
 	 */
@@ -42,7 +75,32 @@ public class PageObjectClass extends BaseClass {
 
 			}
 			System.out.println(list.get(i).getText());
+			log.info(list.get(i).getText());
 		}
 	}
+	
+	public boolean verifyText()
+	{
+		return StadiumText.isDisplayed();
+	}
+	
+	public String verifyTitle()
+	{
+		return driver.getTitle();
+	}
+	
+	//print ratings point and number of reviews in the console in main
+	
+	public boolean verifylink()
+	{
+		return link.isDisplayed();
+	}
+	
+	//Print the address appearing above the “mumbaicricket.com”
+	public boolean verifyPhone()
+	{
+		return phone.isDisplayed();
+	}
 
+	
 }
