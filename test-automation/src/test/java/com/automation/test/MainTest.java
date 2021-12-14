@@ -1,32 +1,28 @@
 package com.automation.test;
 
 import java.io.IOException;
-import java.util.List;
 
-import org.openqa.selenium.WebDriver;
+
+/*import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.FindBys;
+import org.openqa.selenium.support.FindBys;*/
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
-import org.testng.Reporter;
+/*import org.testng.Reporter;*/
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-import org.testng.log4testng.Logger;
+/*import org.testng.log4testng.Logger;*/
 
 import com.automation.base.BaseClass;
 import com.automation.page.PageObjectClass;
 import com.automation.utility.UtilityHelper;
 
 public class MainTest extends BaseClass {
-	/*
-	 * Logger log=Logger.getLogger(MainTest.class); Logger
-	 * logger=Logger.getLogger(MainTest.class);
-	 */
-
+	
+	
 	PageObjectClass pobject = PageFactory.initElements(driver, PageObjectClass.class);
 	SoftAssert softAssert = new SoftAssert();
-
 	@Test(priority = 1)
 	public void googleSearch() throws IOException, InterruptedException {
 		PageObjectClass pobject = PageFactory.initElements(driver, PageObjectClass.class);
@@ -49,13 +45,12 @@ public class MainTest extends BaseClass {
 
 	@Test(priority = 3)
 	public void verifyTitle() {
-
-		// Assert.assertEquals(pobject.verifyTitle(),"Wankhede Stadium Mumbai - Google
-		// Maps","title not matched");
+		PageObjectClass pobject = PageFactory.initElements(driver, PageObjectClass.class);
+		//SoftAssert softAssert = new SoftAssert();
 		Assert.assertEquals(pobject.verifyTitle(), "Wankhede Stadium Mumbai - Google Maps", "title not matched");
 	}
 
-	// prinbt using logger
+
 	
 	
 	@Test(priority = 4)
@@ -67,12 +62,7 @@ public class MainTest extends BaseClass {
 	
 	@Test(priority = 5)
 	public void verifyLink() {
-		PageObjectClass pobject = PageFactory.initElements(driver, PageObjectClass.class);
-		/*
-		 * SoftAssert softAssert = new SoftAssert();
-		 * softAssert.assertTrue(pobject.verifylink(),"link not matched");
-		 * softAssert.assertAll();
-		 */
+		PageObjectClass pobject = PageFactory.initElements(driver, PageObjectClass.class);	
 		Assert.assertTrue(pobject.verifylink(), "link not matched");
 		
 
@@ -93,7 +83,7 @@ public class MainTest extends BaseClass {
 		UtilityHelper.takeScreenshotEndOfTest();
 		;
 		log.info("last successfully completed");
-		// softAssert.assertAll();
+		
 
 	}
 

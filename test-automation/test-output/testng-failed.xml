@@ -5,8 +5,8 @@
     <classes>
       <class name="com.automation.test.MainTest">
         <methods>
+          <include name="googleSearch"/>
           <include name="teardown"/>
-          <include name="printTest"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.automation.test.MainTest -->

@@ -1,9 +1,0 @@
-package com.automation.test;
-
-import com.automation.base.BaseClass;
-
-public class Test extends BaseClass {
-	
-	
-
-}

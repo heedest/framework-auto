@@ -1,28 +1,7 @@
-[INFO ] 2021-12-01 01:10:08.298 [main] BaseClass - Google launched
-[INFO ] 2021-12-01 01:10:19.061 [main] BaseClass - 100
-[INFO ] 2021-12-01 01:12:46.856 [main] BaseClass - Google launched
-[INFO ] 2021-12-01 01:12:57.593 [main] BaseClass - 100
-[INFO ] 2021-12-01 01:23:54.767 [main] BaseClass - Google launched
-[INFO ] 2021-12-01 01:24:05.537 [main] BaseClass - first test successfully completed
-[INFO ] 2021-12-01 01:24:11.054 [main] BaseClass - last successfully completed
-[INFO ] 2021-12-01 01:27:41.228 [main] BaseClass - Google launched
-[INFO ] 2021-12-01 01:27:51.964 [main] BaseClass - first test successfully completed
-[INFO ] 2021-12-01 01:28:02.095 [main] BaseClass - Rating is[[ChromeDriver: chrome on WINDOWS (aa5ac4a0d58a7d10551c67526923ef3c)] -> xpath: //span[contains(text(),'4.5')]]	and ReviewProxy element for: DefaultElementLocator 'By.xpath: //button[contains(text(),'30,268 reviews')]'
-[INFO ] 2021-12-01 01:28:02.151 [main] BaseClass - address is:[[ChromeDriver: chrome on WINDOWS (aa5ac4a0d58a7d10551c67526923ef3c)] -> xpath: //div[contains(text(),'Vinoo Mankad Rd, Churchgate, Mumbai, Maharashtra 400020')]]
-[INFO ] 2021-12-01 01:28:07.583 [main] BaseClass - last successfully completed
-[INFO ] 2021-12-01 01:31:16.739 [main] BaseClass - Google launched
-[INFO ] 2021-12-01 01:31:27.501 [main] BaseClass - first test successfully completed
-[INFO ] 2021-12-01 01:31:37.671 [main] BaseClass - address is:Vinoo Mankad Rd, Churchgate, Mumbai, Maharashtra 400020
-[INFO ] 2021-12-01 01:31:43.083 [main] BaseClass - last successfully completed
-[INFO ] 2021-12-01 01:40:02.810 [main] BaseClass - Google launched
-[INFO ] 2021-12-01 01:40:13.493 [main] BaseClass - first test successfully completed
-[INFO ] 2021-12-01 01:40:13.602 [main] BaseClass - Rating is4.5	and ReviewSHIVAM
-Local Guide Â· 183 reviews
-[INFO ] 2021-12-01 01:40:13.663 [main] BaseClass - address is:Vinoo Mankad Rd, Churchgate, Mumbai, Maharashtra 400020
-[INFO ] 2021-12-01 01:40:19.082 [main] BaseClass - last successfully completed
-[INFO ] 2021-12-01 01:41:57.750 [main] BaseClass - Google launched
-[INFO ] 2021-12-01 01:42:08.485 [main] BaseClass - first test successfully completed
-[INFO ] 2021-12-01 01:42:08.589 [main] BaseClass - Rating is4.5	and ReviewSHIVAM
-Local Guide · 183 reviews
-[INFO ] 2021-12-01 01:42:08.646 [main] BaseClass - address is:Vinoo Mankad Rd, Churchgate, Mumbai, Maharashtra 400020
-[INFO ] 2021-12-01 01:42:14.051 [main] BaseClass - last successfully completed
+[INFO ] 2021-12-14 22:51:50.741 [main] BaseClass - Google launched
+[INFO ] 2021-12-14 22:51:55.985 [main] BaseClass - total Wankhede Search Result is 10
+[INFO ] 2021-12-14 22:51:56.020 [main] BaseClass - Wankhede Stadium Vinoo Mankad Road, Churchgate, Mumbai, Maharashtra
+[INFO ] 2021-12-14 22:52:01.566 [main] BaseClass - first test successfully completed
+[INFO ] 2021-12-14 22:52:01.658 [main] BaseClass - Rating is:	4.5	and Review:	30,456 reviews
+[INFO ] 2021-12-14 22:52:01.711 [main] BaseClass - address is:Vinoo Mankad Rd, Churchgate, Mumbai, Maharashtra 400020
+[INFO ] 2021-12-14 22:52:07.147 [main] BaseClass - last successfully completed
